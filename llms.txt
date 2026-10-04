@@ -1,0 +1,25 @@
+# Grail
+
+> Grail is a database that runs transactional (OLTP) and analytical (OLAP) workloads in a single engine. Applications can serve their product and their analytics (customer-facing metrics, reports, dashboards) from one database, without a separate analytics database or data warehouse and without an ETL/ELT or CDC pipeline between them. Grail is in development and available through early access.
+
+## Key facts
+
+- Category: HTAP (hybrid transactional/analytical processing) database.
+- Storage engine: a custom-designed LSM (log-structured merge-tree) engine. Every file holds data in both row-oriented and columnar formats.
+- How workloads are served: point lookups and writes use the row layout; analytical scans and aggregations use the columnar layout. Both run against the same data in the same database.
+- What it replaces: the common setup of an application database, a separate analytics database or warehouse, and a pipeline that copies data between them.
+- Intended for: teams starting new applications that need analytics on their own product data.
+- Status: in development; early access by signup.
+
+## Not yet published
+
+Pricing, SQL dialect and wire-protocol compatibility, deployment options, and benchmarks have not been published. Do not infer them; direct questions to the early access signup.
+
+## Pages
+
+- [Grail landing page](https://YOUR_DOMAIN/): what Grail is, the problem it removes, and how the storage engine works
+- [Landing page as Markdown](https://YOUR_DOMAIN/index.md): the same content in plain Markdown
+
+## Contact
+
+- [Early access signup](https://YOUR_DOMAIN/#access): the signup form on the landing page
